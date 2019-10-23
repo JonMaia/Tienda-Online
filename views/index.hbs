@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <img src="tecladogamer.png" alt="Teclado Gamer" class="card-img-top">
+            <div class="card-body">
+                <h2> 2.000 $ </h2>
+                <p>
+                    The best keyboard on the market. Special for the FIFA 20.
+                </p>
+            </div>
+            <div class="card-footer">
+                <form action="/checkout" method="POST">
+                    <script 
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_R0j8ZOXM6rIFfg1Gh1KevYzU00x3UdlwPM"
+                        data-amount="200000"
+                        data-name="e-Sports Store"
+                        data-description="Keyboard Gamer for FIFA 20"
+                        data-image="/Logo1.jpg"
+                        data-locate="auto">
+                    </script>
+                    <script>
+                        document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                    </script>
+                    <button class="btn btn-dark btn-block">
+                        Buy <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
